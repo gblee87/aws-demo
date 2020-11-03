@@ -12,7 +12,7 @@ def lambda_handler(event, context):
 
     return_statement = 'Pandas Version: ', pandas_version, 'Numpy version: ', numpy_version, \
                        'Google Status Code: ', google_status_code
-    
+
     return {
         'statusCode': 200,
         'body': json.dumps(return_statement)
